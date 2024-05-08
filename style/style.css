@@ -1,0 +1,180 @@
+/* Estilização geral */
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+:root {
+    --color001: #297FB8;
+    --color002: #024873;
+    --color003: #D1F3FF;
+    --color004: #66A4CD;
+    --color005: #353535;
+}
+
+body{
+    background-color: var(--color005);
+}
+
+h1 {
+    color: #fff;
+}
+
+h2, h3 {
+    padding: 1em 0;
+}
+
+p {
+    font-size: 1.1em;
+    color: #353535;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr repeat(2, minmax(auto, 25em)) 1fr;
+    align-items: center;
+    text-align: center;
+}
+
+/* Estilização do header */
+
+header {
+    position: relative;
+    min-height: 450px;
+}
+
+header div.imagem {
+    position: absolute;
+    inset: 0 0 0 0;
+    z-index: -1;
+    background-image: url("../images/codigos.jpg");
+    background-repeat: no-repeat;
+    background-position: top center;
+    opacity: 0.4;
+}
+
+header div.box-header {
+    grid-column: 2 / 4;
+}
+
+header p {
+    margin: 1.5em 0 3em 0;
+    color: #fff;
+}
+
+header a {
+    text-decoration: none;
+    color: #fff;
+    background-color: var(--color005);
+    padding: 1.2em 2em;
+    font-size: 1.1em;
+    border: 1px solid #fff;
+    transition: .3s;
+}
+header a:hover {
+    background-color: #fff;
+    color: var(--color005);
+}
+
+/* estilização Section-a e Section-c */
+
+section#section-a, section#section-c {
+    background-color: #fff;
+    padding: 2em;
+}
+
+section#section-a p, h2, section#section-c p, h2 {
+    color: var(--color005);
+}
+
+section#section-a div.box, section#section-c div.box {
+    grid-column: 2 / 4;
+}
+
+/* Estilização da Section-a */
+
+section#section-a div.box-text {
+    padding-bottom: 1em;
+}
+
+section#section-a {
+    padding-bottom: 2em;
+}
+
+/* Estilização da Section-b */
+
+section#section-b {
+    padding: 2em 1em;
+}
+
+section#section-b div.cards {
+    display: flex;
+    grid-column: 2 / 4;
+}
+
+div.cards img {
+    width: 100%;
+    margin-bottom: .5em;
+}
+
+div.cards div.card {
+    margin: 0 .5em;
+    background-color: #fff;
+    color: #353535;
+}
+
+div.card div.card-text {
+    padding: 1.5em;
+}
+
+div.card-text p {
+    padding: 1em .5em;
+}
+
+/* Estilização da Section-c */
+
+section#section-c p {
+    padding: 1em 0;
+}
+
+/* Estilização da Section-c */
+
+section#section-d p, section#section-d h2 {
+    color: #fff;
+}
+
+section#section-d div.box:first-child {
+    background-color: var(--color001);
+}
+
+section#section-d div.box {
+    grid-column: span 2;
+    padding: 2em;
+}
+
+/* Estilização do footer */
+
+footer {
+    padding: 2em;
+    background-color: #000;
+}
+
+footer div {
+    grid-column: span 2;
+}
+
+footer div p {
+    color: #fff;
+}
+
+footer div a {
+    color: var(--color004);
+    text-decoration: none;
+    transition: .3s;
+}
+
+footer div a:hover {
+    color: #369de2;
+}
